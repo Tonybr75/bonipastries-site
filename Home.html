@@ -3,36 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hey esteemed, welcome to a state of the art bakery, where choice meets your taste!">
-  <title>BONIPASTRIES</title>
+  <meta name="description" content="Welcome to Bonipastries — handcrafted cakes, bespoke orders, and joyful moments.">
+  <title>BONIPASTRIES — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <header>
-  <nav>
-    <h1>BONIPASTRIES</h1>
-    <div>
+  <nav class="nav" aria-label="Primary">
+    <div class="brand">
+      <a href="Home.html"><h1>BONIPASTRIES</h1></a>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <div class="nav-links" id="primary-navigation">
       <a href="Home.html">Home</a>
-<a href=" Menu.html"> Menu</a>
-<a href=" Gallery.html"> Gallery</a>
-<a href=" About Us.html"> About Us</a>
-<a href=" Contact.html"> Contact</a>
-<a href=" Custom Orders.html"> Custom Orders</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="custom-orders.html" class="btn">Custom Orders</a>
     </div>
   </nav>
 </header>
 
 <main>
-  <section class="card">
-    <h2>Home Page</h2>
-    <p>This is the Home section of the website.</p>
+  <section class="hero">
+    <div class="hero-inner">
+      <h2 class="hero-title">Handcrafted Cakes for Every Celebration</h2>
+      <p class="hero-sub">From classic birthday cakes to bespoke wedding creations — baked fresh with premium ingredients.</p>
+      <div class="hero-ctas">
+        <a href="Menu.html" class="btn">View Menu</a>
+        <a href="Custom%20Orders.html" class="btn btn-outline">Order Custom Cake</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <h3>Featured Cakes</h3>
+    <div class="grid">
+      <article class="card cake">
+        <img src="assets/images/cake1.jpg" alt="Vanilla celebration cake" loading="lazy">
+        <h4>Vanilla Celebration</h4>
+        <p>Light vanilla sponge with buttercream and fresh berries.</p>
+      </article>
+      <article class="card cake">
+        <img src="assets/images/cake2.jpg" alt="Decadent chocolate cake" loading="lazy">
+        <h4>Decadent Chocolate</h4>
+        <p>Rich chocolate layers with ganache and hazelnuts.</p>
+      </article>
+      <article class="card cake">
+        <img src="assets/images/cake3.jpg" alt="Elegant wedding cake" loading="lazy">
+        <h4>Elegant Wedding</h4>
+        <p>Multi-tiered design, customizable flavors and decorations.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="about card">
+    <h3>Why Choose Us</h3>
+    <p>We combine artisanal baking techniques with modern design to deliver cakes that taste as beautiful as they look. Local ingredients, sustainable packaging, and friendly service.</p>
   </section>
 </main>
 
 <footer>
-  <p>&copy; 2025 BONIPASTRIES. All rights reserved.</p>
+  <div class="footer-inner">
+    <p>&copy; 2025 BONIPASTRIES. All rights reserved.</p>
+    <p>Follow us on social media for new flavors and offers.</p>
+  </div>
 </footer>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img src="" alt="" />
+</div>
 
 <script src="js/script.js"></script>
 </body>
