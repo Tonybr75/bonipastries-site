@@ -38,11 +38,32 @@
   <main>
     <section class="card">
       <h2>Custom Orders</h2>
-      <p>Tell us about your event, guest count, preferred flavors and design ideas. We'll reply with a quote and timeline.</p>
-      <ul>
-        <li>Lead time: 3–14 days depending on complexity</li>
-        <li>Deposit required for large orders</li>
-      </ul>
+       <p>Tell us your vision and we'll craft it. Typical process:</p>
+       <ol>
+         <li><strong>Consultation:</strong> Describe occasion, guest count, flavors, and design inspirations.</li>
+         <li><strong>Quote & Timeline:</strong> We send a price estimate and delivery/pickup options.</li>
+         <li><strong>Deposit & Confirmation:</strong> Secure your date with a deposit and finalize details.</li>
+         <li><strong>Delivery / Pickup:</strong> Freshly baked and decorated for your event.</li>
+       </ol>
+
+       <h3>Order form</h3>
+       <form action="https://formspree.io/f/your-form-id" method="POST" class="order-form">
+         <label>Name<br><input type="text" name="name" required></label>
+         <label>Email<br><input type="email" name="email" required></label>
+         <label>Phone<br><input type="tel" name="phone"></label>
+         <label>Event Date<br><input type="date" name="event_date"></label>
+         <label>Guest Count<br><input type="number" name="guests" min="1"></label>
+         <label>Style / Notes<br><textarea name="notes" rows="4"></textarea></label>
+         <button type="submit" class="btn">Request Quote</button>
+       </form>
+
+       <h3>Design gallery</h3>
+       <div class="grid">
+         <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80&auto=format&fit=crop&crop=entropy" alt="Strawberry layer cake" loading="lazy">
+         <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&q=80&auto=format&fit=crop&crop=entropy" alt="Chocolate ganache cake" loading="lazy">
+         <img src="https://images.unsplash.com/photo-1549237512-7a1c6a4c8f28?w=800&q=80&auto=format&fit=crop&crop=entropy" alt="Floral wedding cake" loading="lazy">
+       </div>
+     </section>
     </section>
   </main>
 
