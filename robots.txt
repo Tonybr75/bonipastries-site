@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Tonybr75.github.io/bonipastries-site/sitemap.xml
