@@ -39,14 +39,10 @@
   <main>
     <section class="about card">
       <div class="about-grid">
-        <picture>
-          <source type="image/webp" srcset="assets/images/team.webp">
-          <img src="assets/images/team.jpg" alt="Bonipastries team" class="about-photo">
-        </picture>
+        <img src="assets/images/team.jpg" alt="Bonipastries team" class="about-photo">
         <div>
           <h2>Our Story</h2>
           <p>Bonipastries began with a simple idea: craft beautiful cakes that bring people together. We prioritize quality ingredients, thoughtful design, and excellent service.</p>
-          <p>Our talented team of bakers and decorators brings years of experience and passion to every creation. We believe in using local ingredients whenever possible and sustainable practices in everything we do.</p>
         </div>
       </div>
     </section>

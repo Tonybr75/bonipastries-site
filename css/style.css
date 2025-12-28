@@ -116,3 +116,50 @@ footer{ margin-top:3rem; padding:2rem 1rem; background:transparent; text-align:c
   .nav{ display:flex; justify-content:space-between; align-items:center; }
   .nav .nav-links{ display:flex; }
 }
+
+/* About page grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* Contact page grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.contact-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.contact-card p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive layouts */
+@media (max-width: 768px) {
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-photo,
+  .contact-photo {
+    height: 250px;
+  }
+}
